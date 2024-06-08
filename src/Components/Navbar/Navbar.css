@@ -1,0 +1,120 @@
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px #344C64;
+    background-color: #006989;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.header img {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    background-color: #E88D67;
+    border-radius: 50%;
+}
+
+.nav_links ul li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+}
+
+.currency-box {
+    background-color: transparent;
+}
+
+.currency-box select {
+    padding: 8px 13px;
+    outline: none;
+    border: 2px solid #7077A1;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #F6B17A;
+    color: #121212;
+}
+
+.currency-box select option {
+    color: #121212;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    .nav_container {
+        padding: 10px 5px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .header img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav_links {
+        display: none;
+        flex: 0;
+    }
+
+    .currency-box select {
+        padding: 4px 8px;
+    }
+
+    .currency-box select option {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    .nav_container {
+        padding: 10px 5px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav_links {
+        display: none;
+        flex: 0;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .nav_links {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .nav_links ul {
+        display: inline-flex;
+        gap: 50px;
+    }
+
+}

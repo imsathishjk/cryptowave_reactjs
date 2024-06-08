@@ -1,0 +1,178 @@
+.curreny-container {
+    margin: 80px auto;
+    max-width: 1200px;
+}
+
+.seach-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.seach-box input {
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Outfit';
+    width: 100%;
+    user-select: none;
+}
+
+.seach-box input::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: #7077A1;
+    font-family: 'Outfit';
+    letter-spacing: 0.5px;
+}
+
+.search-btn {
+    background-color: #F6B17A;
+    color: #121212;
+    font-size: 16px;
+    padding: 8px 15px;
+    border: none;
+    font-weight: 600;
+    font-family: 'Outfit';
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.list-box {
+    margin: 20px 0px;
+    background-color: #006989;
+    padding: 10px 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1.5fr;
+    grid-gap: 80px;
+    margin: 20px 0px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.list-header {
+    font-size: 20px;
+    font-weight: 700;
+    color: #E88D67;
+}
+
+.list-container .coin_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.coin_logo img {
+    width: 25px;
+    height: 25px;
+}
+
+.list-container p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.price {
+    display: flex;
+    gap: 3px
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.green {
+    color: #8DECB4;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    color: #FF6464;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.market-cap {
+    display: flex;
+    gap: 3px;
+}
+
+.market-cap span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media screen and (min-width:320px) and (max-width:450px) {
+    .list-box {
+        padding: 5px 10px;
+    }
+
+    .list-container {
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-gap: 12px;
+    }
+    .list-container p{
+        font-size: 14px;
+    }
+
+    .coin_logo img {
+       width: 18px;
+       height: 18px;
+    }
+
+    .list-container p:nth-child(3) {
+        display: none;
+    }
+
+    .list-container p:nth-child(4) {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:451px) and (max-width:767px) {
+    .list-box {
+        padding: 5px 10px;
+    }
+
+    .list-container {
+        grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+        grid-gap: 15px;
+    }
+    .list-container p{
+        font-size: 15px;
+    }
+
+    .list-container p:nth-child(3) {
+        display: flex;
+    }
+
+    .list-container p:nth-child(4) {
+        display: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width:900px) {
+    .list-container{
+        grid-gap: 30px;
+    }
+}

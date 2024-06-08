@@ -1,0 +1,48 @@
+.home_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin-top: 100px;
+}
+
+.paginator {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.paginator p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+}
+
+.paginator .active {
+    background-color: #E88D67;
+    color: #006989;
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    .paginator {
+        gap: 10px;
+    }
+    .paginator p{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+}
+@media screen and (min-width:480px) {
+    .paginator{
+        gap: 15px;
+    }   
+}

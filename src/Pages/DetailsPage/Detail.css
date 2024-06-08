@@ -1,0 +1,87 @@
+.detail-container {
+    margin: 80px auto;
+    max-width: 800px;
+}
+
+.coin-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 25px;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.coin-details img {
+    width: 35px;
+}
+
+.coin-details .chart {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 900px;
+}
+
+.market-details {
+    width: 100%;
+}
+
+.market-details ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+    border-bottom: 4px solid #E88D67;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    border-right: 3px solid #E88D67;
+    border-left: 3px solid #E88D67;
+    padding: 8px;
+    background-color: #eef7e6;
+    color: #121212;
+}
+
+.market-details ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.market-details ul li span {
+    font-size: 16px;
+    font-weight: 600;
+}
+.chart{
+    width: 100%;
+}
+.site{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.site p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.site a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #E88D67;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:479px) {
+
+    .market-details ul li {
+        font-size: 14px;
+    }
+
+    .market-details ul li span {
+        font-size: 14px;
+    }
+
+}
